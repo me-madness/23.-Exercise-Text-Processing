@@ -7,17 +7,15 @@ if len(first_string) > len(second_string):
     for index in range(len(second_string)):
         total_sum += ord(first_string[index]) * ord(second_string[index])
     for index in range(len(second_string), len(first_string)):
-        total_sum += ord(first_string[index])
-            
+        total_sum += ord(first_string[index])          
 elif len(first_string) < len(second_string):
     for index in range(len(first_string)):
         total_sum += ord(first_string[index]) * ord(second_string[index])
     for index in range(len(first_string), len(second_string)):
         total_sum += ord(second_string[index])
-elif len(first_string) == len(second_string):
+elif len(first_string) == len(second_string):  # else:
     for index in range(len(second_string)):
-        total_sum += ord(first_string[index]) * ord(second_string[index])
-        
+        total_sum += ord(first_string[index]) * ord(second_string[index])        
 print(total_sum)        
 
 # Second task by me
